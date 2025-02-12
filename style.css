@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-body {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -57,7 +58,7 @@ body {
     font-weight: 600;
 }
 
-.menu .navbar ul li a:hover {
+.menu .navbar ul li a:hover { 
     color: #CE967B;
 }
 
@@ -175,9 +176,10 @@ body {
 
 .services-content h2 {
     font-size: 55px;
+    line-height: 70px;
     color: #F9FAFC;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .services-content p {
@@ -280,18 +282,18 @@ padding: 15px 55px;
 
 .footer-content {
      display: flex;
-     justify-content: space between;
+     justify-content: space-between;
 }
 
 .link h3 {
      font-size: 18px;
-     color: #AFAFAF;
+     color: #F9FAFC;
      margin-bottom: 15px;
 }
 
 .link a {
     font-size: 16px;
-    color: #CCCCCC; /* Light gray */
+    color: #c5c5c5;
     display: block;
     margin-bottom: 15px;          
 }
@@ -318,7 +320,7 @@ padding: 15px 55px;
         display: initial;
     }
     .header {
-        min-height: auto;
+        min-height: 0vh;
     }
     .header-content {
         padding: 100px 30px;
@@ -327,7 +329,7 @@ padding: 15px 55px;
         padding: 0;
     }
     .coffee {
-        padding: 0;
+        padding: 30px;
     }
     .coffee-content h2 {
         padding: 0;
@@ -355,7 +357,7 @@ padding: 15px 55px;
     .services-1 {
         margin-bottom: 25px;
     }
-    .general-1 {
+    .general {
         flex-direction: column;
     }
     .general-1 {
