@@ -147,6 +147,7 @@ body {
 }
 
 .coffee-img {
+    max-width:1024px;
     position: absolute;
     top: 0;
     right: 0;
