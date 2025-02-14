@@ -3,12 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none;          
     list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .container {
@@ -18,8 +20,8 @@ body {
 
 .header {
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)),
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
         url(images/bg.jpg); 
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -47,7 +49,7 @@ body {
 
 .menu .navbar ul li {
     position: relative;
-    float: left;
+    float: left;        
 }
 
 .menu .navbar ul li a {
@@ -70,7 +72,7 @@ body {
     width: 25px;
 }
 
-.menu label {
+.menu-label {
     cursor: pointer;
     display: none;
 }
@@ -107,6 +109,7 @@ body {
 }
 
 .coffee {
+    width: 100%;
     padding: 100px 0;
     background-color: #E1E2E6;
     position: relative;
@@ -146,8 +149,8 @@ body {
     width: 200px;
 }
 
-.coffee-img {
-    max-width:1024px;
+.caffee-img {
+    
     position: absolute;
     top: 0;
     right: 0;
@@ -163,7 +166,7 @@ body {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)),
-        url(images/bg2.jpg);
+        url(images/bg3.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -180,7 +183,7 @@ body {
     line-height: 70px;
     color: #F9FAFC;
     text-transform: uppercase;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .services-content p {
@@ -262,7 +265,7 @@ p {
 }
 
 .blog-1 {
-padding: 15px 55px;
+     padding: 15px 55px;
 }
 
 .blog-1 img {
@@ -299,13 +302,15 @@ padding: 15px 55px;
     margin-bottom: 15px;          
 }
 
-@media (max-width: 991px) {
+@media (max-width:768px) {
     .menu {
         padding: 30px;
     }
-    .menu label {
+
+    .menu-label {
         display: initial;
     }
+
     .menu .navbar {
         position: absolute;
         top: 100%;
@@ -314,74 +319,95 @@ padding: 15px 55px;
         background-color: #323337;
         display: none;
     }
+
     .menu .navbar ul li {
         width: 100%;
     }
+
     #menu:checked ~ .navbar {
         display: initial;
     }
+
     .header {
         min-height: 0vh;
     }
+
     .header-content {
         padding: 100px 30px;
     }
+
     .header-content p {
         padding: 0;
     }
+
     .coffee {
         padding: 30px;
     }
+
     .coffee-content h2 {
         padding: 0;
     }
+
     .txt-p {
         padding: 0;
     }
+
     .coffee-group {
         flex-direction: column;
         margin-bottom: 0;
     }
+
     .coffee-img {
         display: none;
     }
+
     .services {
         padding: 30px;
     }
+
     .services-content p {
         padding: 0;
     }
+
     .services-group {
         flex-direction: column;
         margin-bottom: 0;
     } 
+
     .services-1 {
         margin-bottom: 25px;
     }
+
     .general {
         flex-direction: column;
     }
+
     .general-1 {
         width: 100%;
         padding: 30px;
         text-align: center;
     }
+
     .general-2, .general-3{
         display: none;
     }
+
     .blog {
         padding: 30px;
     }
+
     .blog-content {
         flex-direction: column;
     }
-    .blog-1 {
-        padding:0;
 
+    .blog-1 {
+        padding: 0;
     }
+
       .footer {
         padding: 30px;
     }
+    
     .footer-content {
         flex-direction: column;
         text-align: center;
